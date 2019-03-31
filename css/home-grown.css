@@ -1,0 +1,224 @@
+/*  FLEXBOX */
+header {
+  margin: 0;
+  padding: 50px;
+}
+body {
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  line-height: 150%;
+
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+.fold {
+  margin: 0;
+  padding: 10px;
+  height: 88vh;
+  background-color: #c4dee8;
+}
+
+
+/* EVENT CARDS */
+
+#event-cards {
+  position: relative;
+  bottom: 100px;
+  z-index: auto;
+  margin: auto;
+  border-spacing: 100px;
+}
+
+#social-energy {
+  background-image: url(../assets/img/art/graff.jpg);
+  background-color: #000,.5;
+}
+
+#gparty {
+  background-image: url(../assets/img/events/420/gparty.jpg);
+}
+
+.event-card {
+  position: relative;
+  width: 40%;
+  display: table-cell;
+  background-color: black;
+  color: #FFE093;
+  text-align: center;
+  font-size: 16px;
+  max-height: 300px;
+  padding: 10px;
+}
+
+.event-card img {
+  overflow: hidden;
+  width: 100%;
+  min-height: 70%;
+  max-height: 70%;
+  margin-bottom: 30%;
+}
+
+.ec-content {
+  background-color: grey;
+  height: 100%;
+  padding: 20px;
+  margin-bottom: 15%;
+}
+
+.booking-cta {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 5px;
+  background-color: #FFE093;
+  margin: 10px;
+}
+
+.booking-cta a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+/* HOME LINKS*/
+
+.ico-hm {
+  position: absolute;
+  bottom: 8%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+
+/* SITE NAVIGATION */
+
+.site-nav {
+  margin: auto;
+  text-align: center;
+  width: 100vw;
+  padding: 1px;
+  font-size: 10px;
+  font-weight: 600;
+  background: black;
+  letter-spacing: 1.2em;
+  position: -webkit-sticky; /* safari */
+  position: sticky;/* position settings */
+  top: 0;
+  bottom: 0;
+  vertical-align: middle;
+}
+
+.site-nav li {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.site-nav li a {
+  text-decoration: none;
+  color: #4a463e;
+}
+
+.site-nav li a:hover {
+  color: #FFE093;
+}
+
+.nav {
+  width: 80%;
+  vertical-align: middle;
+}
+
+.nav-logo img {
+  width: 45px;
+  display: inline-block;
+  position: absolute;
+  left: 5%;
+  vertical-align: middle;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: justify;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: #C22200;
+  background-color: #656262;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* FOLD ICONS */
+
+main {
+  margin: 0;
+  padding: 50px;
+  background-color: black;
+}
+
+/* FOOTER */
+
+footer {
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  padding: 50px;
+  background-color: #4a463e;
+}
+
+.ftr-logo {
+  width: 100px;
+}
+
+.rights {
+  font-size: 10px;
+  color: #fff;
+}
+
+.ftr-soc-ico {
+  margin: auto;
+  width: 10%
+}
+
+.fbk-ico {
+  width: 20px;
+}
+
+.insta-ico {
+  width: 20px;
+}
+
+.ytb-ico {
+  width: 20px;
+}
