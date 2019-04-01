@@ -34,26 +34,17 @@ body {
   margin: 0;
 }
 
-.event-cards {
-  display: block;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+.event-cards { /* flex container */
+  display: flex;
+  flex-flow: row nowrap;/* combining a value for flex-direction - items shrink with viewport and stay in row*/
 }
 
 .event-card {
-  display: inline-block;
-  width: 400px;
-  min-height: 100%;
-  margin: 0;
-  min-height: 400px;
-  padding: 20px;
+
 }
 
 .ec-content {
   background-color: grey;
-  width: 100%;
-  min-height: 80%;
 }
 
 /* HOME LINKS*/
