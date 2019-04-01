@@ -1,26 +1,21 @@
 /*  FLEXBOX */
 header {
   margin: 0;
-  padding: 50px;
-}
-body {
-  font-family: Verdana, Geneva, Arial, sans-serif;
-  line-height: 150%;
-
-  margin: 0;
   padding: 0;
 }
 
-main {
+body {
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  line-height: 150%;
   margin: 0;
   padding: 0;
 }
 
 .fold {
   margin: 0;
-  padding: 10px;
   height: 88vh;
   background-color: #c4dee8;
+  padding: 50px 50px 0px 50px;
 }
 
 
@@ -45,39 +40,29 @@ main {
 
 .event-card {
   position: relative;
-  width: 40%;
   display: table-cell;
   background-color: black;
   color: #FFE093;
   text-align: center;
   font-size: 16px;
   max-height: 300px;
-  padding: 10px;
-}
-
-.event-card img {
-  overflow: hidden;
-  width: 100%;
-  min-height: 70%;
-  max-height: 70%;
-  margin-bottom: 30%;
 }
 
 .ec-content {
+  display: table-cell;
+  width: 100%;
+  height: 80%;
   background-color: grey;
-  height: 100%;
-  padding: 20px;
-  margin-bottom: 15%;
 }
 
 .booking-cta {
+  display: table-cell;
+  min-height: 5%;
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 5px;
   background-color: #FFE093;
-  margin: 10px;
 }
 
 .booking-cta a {
@@ -101,10 +86,10 @@ main {
 /* SITE NAVIGATION */
 
 .site-nav {
-  margin: auto;
+  margin: 0;
+  height: 25px;
   text-align: center;
-  width: 100vw;
-  padding: 1px;
+  max-width: 100vw;
   font-size: 10px;
   font-weight: 600;
   background: black;
@@ -116,7 +101,13 @@ main {
   vertical-align: middle;
 }
 
-.site-nav li {
+
+.nav {
+  margin: auto;
+  text-align: center;
+}
+
+.nav li {
   background-color: black;
   color: white;
   border: none;
@@ -126,26 +117,20 @@ main {
   vertical-align: middle;
 }
 
-.site-nav li a {
+.nav li a {
   text-decoration: none;
   color: #4a463e;
 }
 
-.site-nav li a:hover {
+.nav li a:hover {
   color: #FFE093;
 }
 
-.nav {
-  width: 80%;
-  vertical-align: middle;
-}
-
 .nav-logo img {
-  width: 45px;
+  width: 25px;
   display: inline-block;
   position: absolute;
   left: 5%;
-  vertical-align: middle;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -183,8 +168,8 @@ main {
 
 main {
   margin: 0;
-  padding: 50px;
-  background-color: black;
+  padding: 100px;
+  background-color: yellow;
 }
 
 /* FOOTER */
