@@ -8,26 +8,21 @@ body {
   font-family: Verdana, Geneva, Arial, sans-serif;
   line-height: 150%;
   margin: 0;
-  padding: 0;
+  padding: 0px;
+  background-color: #000;
 }
 
 .fold {
   margin: 0;
-  height: 88vh;
+  height: 96vh;
   background-color: #c4dee8;
-  padding: 50px 50px 0px 50px;
+  padding: 0px;
 }
 
 
 /* EVENT CARDS */
 
-#event-cards {
-  position: relative;
-  bottom: 100px;
-  z-index: auto;
-  margin: auto;
-  border-spacing: 100px;
-}
+
 
 #social-energy {
   background-image: url(../assets/img/art/graff.jpg);
@@ -38,38 +33,13 @@ body {
   background-image: url(../assets/img/events/420/gparty.jpg);
 }
 
+.event-cards {
+}
+
 .event-card {
-  position: relative;
-  display: table-cell;
-  background-color: black;
-  color: #FFE093;
-  text-align: center;
-  font-size: 16px;
-  max-height: 300px;
+  display: inline-block;
+  width: 400px;
 }
-
-.ec-content {
-  display: table-cell;
-  width: 100%;
-  height: 80%;
-  background-color: grey;
-}
-
-.booking-cta {
-  display: table-cell;
-  min-height: 5%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: #FFE093;
-}
-
-.booking-cta a {
-  text-decoration: none;
-  font-weight: 600;
-}
-
 
 /* HOME LINKS*/
 
@@ -87,20 +57,22 @@ body {
 
 .site-nav {
   margin: 0;
-  height: 25px;
+  height: 30px;
   text-align: center;
   max-width: 100vw;
   font-size: 10px;
   font-weight: 600;
-  background: black;
+  background: #000;
   letter-spacing: 1.2em;
   position: -webkit-sticky; /* safari */
   position: sticky;/* position settings */
   top: 0;
   bottom: 0;
-  vertical-align: middle;
 }
 
+ul {
+  margin: 0;
+}
 
 .nav {
   margin: auto;
@@ -108,13 +80,12 @@ body {
 }
 
 .nav li {
-  background-color: black;
+  background-color: #000;
   color: white;
   border: none;
   cursor: pointer;
   position: relative;
   display: inline-block;
-  vertical-align: middle;
 }
 
 .nav li a {
@@ -128,9 +99,10 @@ body {
 
 .nav-logo img {
   width: 25px;
-  display: inline-block;
   position: absolute;
   left: 5%;
+  top: 3px;
+  bottom: 3px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -164,12 +136,19 @@ body {
 }
 
 
-/* FOLD ICONS */
+/* MAIN */
 
 main {
   margin: 0;
-  padding: 100px;
-  background-color: yellow;
+  padding: 50px;
+  background-color: #000;
+}
+
+#the-story, #musicians {
+  margin: 0;
+  padding: 50px;
+  color: #FFE093;
+  background-color: #01222E;
 }
 
 /* FOOTER */
