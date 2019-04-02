@@ -12,11 +12,16 @@ body {
   background-color: #000;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .fold {
   margin: 0;
   height: 96vh;
   background-color: #c4dee8;
-  padding: 0px;
+  padding: 50px, 50px, 0px, 50px;
 }
 
 
@@ -26,25 +31,73 @@ body {
 
 #social-energy {
   background-image: url(../assets/img/art/graff.jpg);
-  background-color: #000,.5;
+  background-color: rgb(0, 0, 0, 0.5);
+  margin-right: 10px;
 }
 
 #gparty {
-  background-image: url(../assets/img/events/420/gparty.jpg);
-  margin: 0;
+  background-image: url(../assets/img/events/social-energy/gakko.jpg);
+  background-position: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  margin-left: 10px;
 }
 
 .event-cards { /* flex container */
+  max-width: 80%;
+  padding: 50px;
   display: flex;
   flex-flow: row nowrap;/* combining a value for flex-direction - items shrink with viewport and stay in row*/
+  justify-content: center;
+  margin: auto;
 }
 
 .event-card {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
 
 .ec-content {
-  background-color: grey;
+  background-color: #000;
+  padding: 20px;
+  height: 80%;
+  margin-top: auto;
+  color: #fff;
+}
+
+.details {
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: normal;
+}
+
+.line-up {
+  color: #FF6342;
+  margin-top: 10%;
+}
+
+.booking-cta {
+  text-align: center;
+  font-weight: 600;
+  background-color: #FFE093;
+  height: 10%;
+  width: 50%;
+  margin-top: 10%;
+  margin-bottom: auto;
+  border-radius: 50px;
+}
+
+.booking-cta a {
+  text-decoration: none;
+  color: #000;
 }
 
 /* HOME LINKS*/
@@ -108,7 +161,7 @@ ul {
 .nav-logo img {
   width: 25px;
   position: absolute;
-  left: 5%;
+  left: 50px;
   top: 3px;
   bottom: 3px;
 }
