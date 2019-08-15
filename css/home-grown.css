@@ -24,20 +24,48 @@ dark grey     { color: #060901 }*/
 
 /* THE FOLD */
 
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Orbitron-Black";
+  src: url("../assets/fonts/orbitron/Orbitron-Black.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/orbitron/Orbitron-Black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../assets/fonts/orbitron/Orbitron-Black.otf") format("opentype"), /* Open Type Font */
+    url("../assets/fonts/orbitron/Orbitron-Black.svg") format("svg"), /* Legacy iOS */
+    url("../assets/fonts/orbitron/Orbitron-Black.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../assets/fonts/orbitron/Orbitron-Black.woff") format("woff"), /* Modern Browsers */
+    url("../assets/fonts/orbitron/Orbitron-Black.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "bungee-shade";
+  src: url("../assets/fonts/bungee-shade/BungeeShade-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/bungee-shade/BungeeShade-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../assets/fonts/bungee-shade/BungeeShade-Regular.otf") format("opentype"), /* Open Type Font */
+    url("../assets/fonts/bungee-shade/BungeeShade-Regular.svg") format("svg"), /* Legacy iOS */
+    url("../assets/fonts/bungee-shade/BungeeShade-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../assets/fonts/bungee-shade/BungeeShade-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../assets/fonts/bungee-shade/BungeeShade-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
 header {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: Verdana, Geneva, Arial, sans-serif;
-  line-height: 150%;
+  font-family: 'Orbitron-Black', sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
   margin: 0;
   padding: 0px;
   background-color: #000;
 }
 
 p {
+  font-family: inherit;
   margin: 0;
   padding: 0;
 }
@@ -51,6 +79,7 @@ a {
   height: 96vh;
   background-color: #c4dee8;
   padding: 50px, 50px, 0px, 50px;
+  overflow: hi
 }
 
 
@@ -70,6 +99,7 @@ a {
 }
 
 .event-cards { /* flex container */
+  overflow: hidden;
   max-width: 80%;
   padding: 50px;
   display: flex;
@@ -79,6 +109,7 @@ a {
 }
 
 .event-card {
+  overflow: hidden;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -91,7 +122,14 @@ a {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
 
+.headline {
+  font-family: "bungee-shade", sans-serif;
+  font-size: 1.5em;
+  color: #FF5E5E;
+}
+
 .ec-content {
+  overflow: hidden;
   background-color: #161616;
   padding: 20px;
   height: 80%;
@@ -107,7 +145,7 @@ a {
 }
 
 .line-up {
-  color: #FF6342;
+  color: #F72525;
   margin-top: 10%;
 }
 
@@ -116,12 +154,11 @@ a {
   color: #000;
   margin-top: 20px;
   padding: 5px 15px;
-  border-radius: 50px;
   transition: 0.5s;
 }
 
 .booking-cta p:hover {
-  background-image: linear-gradient(#FF2C00, #C22200 );
+  background-color: #F72525;
   transform: scale(1.1);
   color: #FFF;
   transition: 0.5s;
@@ -148,6 +185,7 @@ a {
 /* SITE NAVIGATION */
 
 .site-nav {
+  z-index: 9;
   margin: 0;
   height: 30px;
   text-align: center;
@@ -158,8 +196,10 @@ a {
   letter-spacing: 1.2em;
   position: -webkit-sticky; /* safari */
   position: sticky;/* position settings */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
   top: 0;
   bottom: 0;
+
 }
 
 ul {
@@ -173,6 +213,7 @@ ul {
 }
 
 .nav li {
+  font-weight: 700;
   background-color: #000;
   color: white;
   border: none;
@@ -186,7 +227,7 @@ ul {
   transition: 0.5s;
 }
 
-.nav li:hover {
+.nav li a:hover {
   color: #FFE093;
   transition: 0.5s;
 }
@@ -233,7 +274,8 @@ ul {
 /* MAIN */
 
 main {
-  margin: 0;
+  z-index: 5;
+  margin: 0px;
   padding: 50px;
   background-color: #11100e;
 }
@@ -250,7 +292,7 @@ main {
 #vids-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto;
   grid-gap: 10px;
   padding-bottom: 50px;
@@ -267,18 +309,20 @@ main {
 /* PRODUCTS */
 
 #ps-container {
+  max-width: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
-  justify-content: space-between;
+  justify-content: space-around;
   grid-gap: 20px;
   margin: auto;
   background-color: #060901;
 }
 
 .cont {
-  display: flex;
-  flex-flow: column nowrap;
+  display: grid;
+  grid-template-rows: auto auto;
   width: 300px;
+  margin-bottom: 50px;
 }
 
 .cont img {
@@ -292,11 +336,78 @@ main {
 }
 
 .grid-child2 {
+  color: #4a463e;
+  font-size: 10px;
+  margin-top: -90px;
+  min-height: 100px;
+  vertical-align: bottom;
+  position: relative;
   background-color: #F7C325;
-  min-height: 20%;
-  margin-top: -20px;
+  padding: 20px;
 }
 
+.m-unit-cta p {
+  font-size: 15px;
+  margin: auto;
+  position: absolute;
+  color: #000;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: #FFEBB0;
+  transition: 0.5s;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.m-unit-cta p:hover {
+  background-color: #F72525;
+  color: #FFF;
+}
+
+
+/* SUBSCRIPTION */
+#subscription {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.subscribe {
+  font-family: 'Orbitron-Black', sans-serif;
+  margin: auto;
+  width: 500px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.9);
+}
+
+.email {
+  font-family: 'Orbitron-Black', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  z-index: 1;
+  background-color: #ddd;
+  width: 60%;
+  padding: 5px;
+  border: none;
+}
+
+.submit {
+  font-family: 'Orbitron-Black', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  width: 40%;
+  z-index: 1;
+  border: none;
+  background-color: #4a463e;
+  transition: 0.5s;
+}
+.submit:hover {
+  background-color: #FFEBB0;
+}
 
 
 
